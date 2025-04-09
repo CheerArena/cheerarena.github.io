@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Content</title>
+    <style>
+      html, body {
+          height: 100%;
+          margin: 0;   
+          padding: 0;  
+          font-family: sans-serif; 
+      }
+
+      /* Centering Container - Uses Flexbox on the body */
+      body {
+          display: flex;           
+          justify-content: center; 
+          align-items: center;    
+          min-height: 100vh;      
+          background-color: #f0f0f0; 
+      }
+
+      .content-box {
+          display: flex;            
+          flex-direction: column;   
+          align-items: center;     
+          padding: 30px;            
+          background-color: #ffffff;
+          border-radius: 8px;       
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+          max-width: 90%;           
+          text-align: center;      
+      }
+
+  
+      .logo {
+          max-width: 100px;
+          height: auto;
+          margin-bottom: 10px;
+      }
+
+      .text-content {
+          color: #333;
+          font-size: 1em;
+          line-height: 1.5;
+          margin-top: 0;
+      }      
+    </style>
+</head>
+<body>
+    <div class="centered-container">
+        <div class="content-box">
+          <div>
+            <div style="margin-bottom: 10px;">
+              <a href="https://www.cheerarena.com">CheerArena</a>
+            </div>            
+            <div>
+              <img src="https://www.cheerarena.com/images/cheerarena_round.png" alt="CheerArena" class="logo">
+            </div>
+          </div>
+          
+          <div>
+            <div class="text-content">
+              <a href="./demo/studio.html">Studio Demo</a>
+            </div>
+            <div style="margin-bottom: 10px;">
+              Live stream - Real-time, Rich media, Remix studio
+            </div>
+          </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
